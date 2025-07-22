@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schneider Electric GTE Prep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="welcome-screen" class="screen">
+            <img src="schneider_logo.png" alt="Schneider Electric Logo" class="logo">
+            <h1>Graduate Engineer Trainee Placement Prep</h1>
+            <p>This quiz covers technical and aptitude questions relevant to the Schneider Electric hiring process. Good luck! 💡</p>
+            <div class="welcome-buttons">
+                <button id="start-btn" class="btn">Start New Test</button>
+                <button id="review-persistent-btn" class="btn btn-secondary hide">Review Incorrect Answers (<span id="incorrect-count">0</span>)</button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div id="quiz-header">
+                <div id="question-counter">Question 1/10</div>
+                <div id="score-display">Score: 0</div>
+            </div>
+            <div id="question-container">
+                <div id="question-text">Question goes here...</div>
+            </div>
+            <div id="answer-buttons" class="btn-grid">
+                </div>
+            <button id="next-btn" class="btn hide">Next</button>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <h2>Test Complete!</h2>
+            <p>Your Final Score:</p>
+            <h3 id="final-score">0 / 0</h3>
+            <p id="score-message">Keep practicing!</p>
+            <button id="retake-btn" class="btn">Take Another Test</button>
+            <button id="review-session-btn" class="btn btn-secondary hide">Review Answers from This Session</button>
+        </div>
+
+        <div id="review-screen" class="screen hide">
+            <h2 id="review-title">Reviewing Incorrect Answers</h2>
+            <div id="review-container">
+                </div>
+            <div class="review-buttons">
+                 <button id="clear-review-btn" class="btn btn-danger">Clear All Reviewed Answers</button>
+                 <button id="back-to-home-btn" class="btn">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
